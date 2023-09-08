@@ -1,4 +1,4 @@
-package tut.binding;
+package com.example.demo.binding;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ import lombok.Data;
 public class Course {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-public Integer id;
+	public Integer id;
 	public String name;   
 	public Double price;
 }

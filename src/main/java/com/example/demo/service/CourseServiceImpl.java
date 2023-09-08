@@ -1,18 +1,18 @@
-package tut.service;
+package com.example.demo.service;
 
 import java.util.List;
 import java.util.Optional;
 
+import com.example.demo.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tut.binding.Course;
-import tut.repository.CourseRepository;
+import com.example.demo.binding.Course;
 
 @Service
 public class CourseServiceImpl implements CourseService {
 	@Autowired
-	private CourseRepository  courseRep;
+	private CourseRepository courseRep;
 	@Override
 	public String upsert(Course course) {
 		courseRep.save(course);

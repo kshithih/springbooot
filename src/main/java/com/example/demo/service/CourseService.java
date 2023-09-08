@@ -1,8 +1,8 @@
-package tut.service;
+package com.example.demo.service;
 
 import java.util.List;
 
-import tut.binding.Course;
+import com.example.demo.binding.Course;
 
 public interface CourseService {
 public String upsert(Course course);
